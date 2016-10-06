@@ -32,7 +32,7 @@ function installdotnet() {
     then
       echo "Installing dotnet"
       apt-get install curl
-      curl -sSL https://raw.githubusercontent.com/dotnet/cli/rel/1.0.0/scripts/obtain/dotnet-install.sh | bash /dev/stdin --channel beta --version 1.0.0-preview1-002702 --install-dir .dotnet
+      curl -sSL https://raw.githubusercontent.com/dotnet/cli/rel/1.0.0/scripts/obtain/dotnet-install.sh | bash /dev/stdin --channel beta --version 1.0.0-preview2-003131 --install-dir .dotnet
       export PATH=.dotnet:$PATH
   fi
 }
